@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="header">My Audio Player</header>
+      <header className="header">SMJ Audio Player</header>
       <div className="container">
         <div className="player">
           <div className="details">
@@ -14,6 +14,7 @@ function App() {
           <audio id="audio" controls>
             <source src="song.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
+            
           </audio>
           <div className="controls">
             <button id="prev">Prev</button>
