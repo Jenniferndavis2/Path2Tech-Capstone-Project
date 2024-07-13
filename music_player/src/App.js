@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Nav from './Nav';
+import Main from './Main';
+import About from './About';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="header">My Audio Player</header>
-      <div className="container">
-        <div className="player">
-          <div className="details">
-            <h2 id="title">Song Title</h2>
-            <h3 id="artist">Artist</h3>
-          </div>
-          <audio id="audio" controls>
-            <source src="song.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-          <div className="controls">
-            <button id="prev">Prev</button>
-            <button id="play">Play</button>
-            <button id="next">Next</button>
-          </div>
+    <div className='container'>
+      <div className='navbar'>
+        <Nav />
+      </div>
+      <div className='content'>
+        <div className='content_box'>
+          <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/About" element={<About />} />
+          </Routes>
         </div>
       </div>
     </div>
