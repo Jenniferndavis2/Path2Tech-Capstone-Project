@@ -28,10 +28,9 @@ const MusicPlayer = () => {
             duration: '2:11',
         }
     ];
-  
-  const currentTrack = tracks[currentTrackIndex];
+
     
-  const playTrack = (index) => {
+    const playTrack = (index) => {
     setCurrentTrackIndex(index);
     };
 
@@ -46,14 +45,9 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className='mp_static'>
-      <div className="player_details">
-
-          <img src={currentTrack.album_cover} alt={currentTrack.album_title} className="album_covermp" />
-          <div className="mp_details">{currentTrack.title}<br /><strong>{currentTrack.artist}</strong></div>
-          </div>
-
-      <div className='player_only'>
+    <div>
+      <div className="playertext">
+        <h3>{tracks[currentTrackIndex].title} by {tracks[currentTrackIndex].artist}</h3>
         <AudioPlayer
         autoPlay={false}
         showSkipControls={true}
@@ -61,12 +55,11 @@ const MusicPlayer = () => {
         onClickPrevious={playPrevious}
         onClickNext={playNext}
         src={tracks[currentTrackIndex].src}
-        // onPlay={() => setIsPlaying(true)}
-        // onPause={() => setIsPlaying(false)}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
       />
       </div>
-
-      {/* <p>
+      <p>
         <ol>
           {tracks.map((track, index) => (
             <li key={index} onClick={() => playTrack(index)} className='playlist_track'>
@@ -81,7 +74,7 @@ const MusicPlayer = () => {
             </li>
           ))}
         </ol>
-    </p> */}
+    </p>
     </div>
   );
 };
