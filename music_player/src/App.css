@@ -184,7 +184,7 @@ input[type="password"] {
 input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #5b4caf;
   border: none;
   border-radius: 5px;
   color: white;
@@ -192,10 +192,10 @@ input[type="submit"] {
   font-size: 16px;
 }
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #490957;
 }
 .login-link {
-  color: #4CAF50;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   margin-top: 20px;
