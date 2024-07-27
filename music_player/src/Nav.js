@@ -13,7 +13,7 @@ const Nav = () => {
         </div>
         <br />
         <div className="top_nav">
-            <FiUser /><NavLink to="/About" className="navLinker link">Login</NavLink>
+            <FiUser /><NavLink to="/Login" className="navLinker link">Login</NavLink>
         </div>
         </>
   );
