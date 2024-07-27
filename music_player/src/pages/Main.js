@@ -1,14 +1,9 @@
-<audio id="audio" controls>
-  <source src="song.mp3" type="audio/mpeg" />
-  Your browser does not support the audio element.
-</audio>  
-import React from 'react';
-import './styles.css';
+import React from 'react'
 
-export default function App(): JSX.Element {
+const Main = () => {
   return (
-    <>
-      <header className="header">My Audio Player</header>
+    <div className="App">
+      <header className="header">SMJ Audio Player</header>
       <div className="container">
         <div className="player">
           <div className="details">
@@ -18,6 +13,7 @@ export default function App(): JSX.Element {
           <audio id="audio" controls>
             <source src="song.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
+            
           </audio>
           <div className="controls">
             <button id="prev">Prev</button>
@@ -26,6 +22,8 @@ export default function App(): JSX.Element {
           </div>
         </div>
       </div>
-    </>
-  );
+    </div>
+  )
 }
+
+export default Main

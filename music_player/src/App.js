@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './Nav';
 import Main from './Main';
 import About from './About';
+import Login from './pages/Login';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Login" element={<Login />} />
           </Routes>
         </div>
       </div>
