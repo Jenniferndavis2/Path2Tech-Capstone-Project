@@ -87,7 +87,7 @@
 
 .rhap_time {
   color: $#333 !default;
-  font-size: 16px;
+  font-size: 12px;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -149,9 +149,9 @@
 }
 
 .rhap_repeat-button {
-  font-size: 26px;
-  width: 26px;
-  height: 26px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
   color: #868686;
   margin-right: 6px;
 }
@@ -166,15 +166,15 @@
 .rhap_main-controls-button {
   margin: 0 3px;
   color: #868686;
-  font-size: 35px;
-  width: 35px;
-  height: 35px;
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 .rhap_play-pause-button {
-  font-size: 40px;
-  width: 40px;
-  height: 40px;
+  font-size: 34px;
+  width: 34px;
+  height: 34px;
   
 }
 
@@ -186,10 +186,10 @@
 }
 
 .rhap_volume-button {
-  flex: 0 0 26px;
-  font-size: 26px;
-  width: 26px;
-  height: 26px;
+  flex: 0 0 20px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
   color: #868686;
   margin-right: 6px;
 }
