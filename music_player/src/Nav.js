@@ -9,7 +9,7 @@ const Nav = () => {
             <div className="nav_name">Music Player</div><br />
             <FiHome /><NavLink to="/" className="navLinker link">Home</NavLink><br /><br />
             <FiStar /><NavLink to="/About" className="navLinker link">About</NavLink><br /><br /> 
-            <FiSearch /><NavLink to="/About" className="navLinker link">Search</NavLink><br /><br />
+            <FiSearch /><NavLink to="/Search" className="navLinker link">Search</NavLink><br /><br />
         </div>
         <br />
         <div className="top_nav">

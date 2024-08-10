@@ -4,6 +4,8 @@ import Nav from './Nav';
 import Main from './Main';
 import About from './About';
 import Login from './pages/Login';
+import Search from './pages/Search';
+import Signup from './pages/Signup';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="/About" element={<About />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Search" element={<Search />} />
+          <Route path="/Signup" element={<Signup />} /> 
           </Routes>
         </div>
       </div>

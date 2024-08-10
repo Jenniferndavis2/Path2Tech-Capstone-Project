@@ -1,16 +1,17 @@
 import React from 'react'
 import "../App.css"
+import {Link} from 'react-router-dom';
+
 const Login = () => {
   return (
     <div class="container-login">
-        <h2>Create Account</h2>
+        <h2>login</h2>
         <form>
-            <input type="text" name="username" placeholder="Username" required/>
             <input type="email" name="email" placeholder="Email" required/>
             <input type="password" name="password" placeholder="Password" required/>
-            <input type="submit" value="Create Account"/>
+            <input type="submit" value="login"/>
         </form>
-        <a class="login-link" href="#">Already have an account? Log in</a>
+        <Link className='login-link' to="/Signup">Sign Up</Link> 
     </div>
   )
 }
