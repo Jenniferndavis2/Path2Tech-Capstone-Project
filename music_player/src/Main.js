@@ -1,4 +1,5 @@
 import React from 'react';
+import MusicPlayercopy from './MusicPlayercopy';
 import './App.css';
 
 const Main = ({tracks,setCurrentTrackIndex}) => {

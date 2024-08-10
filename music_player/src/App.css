@@ -52,6 +52,12 @@ body {
 .header_welcome {
   font-weight: bold;
   font-size: 40px;
+  color:#6504C5;
+}
+.header_welcome_p {
+  font-weight: bold;
+  font-size: 40px;
+  color:#6504C5;
 }
 
 .navLinker {
@@ -251,4 +257,13 @@ input[type="submit"]:hover {
 }
 .login-link:hover {
   text-decoration: underline;
+}
+
+.search-album-art {
+  width: 300px;
+  height: 300px;
+}
+
+.iconp {
+  color:#6504C5;
 }
