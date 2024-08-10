@@ -122,7 +122,7 @@ const App = () => {
       <div className='content'>
         <div className='content_box'>
           <Routes>
-          <Route path="/" element={<Main tracks={tracks} />} />
+          <Route path="/" element={<Main tracks={tracks} currentTrackIndex={currentTrackIndex} setCurrentTrackIndex={setCurrentTrackIndex} />} />
           <Route path="/About" element={<About />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/Signup" element={<Signup />} />
