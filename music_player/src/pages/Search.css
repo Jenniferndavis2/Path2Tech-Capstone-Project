@@ -1,0 +1,46 @@
+/* Style for the search component container */
+.audio-search {
+    background-color: black; /* Background color for the search area */
+    color: white; /* Default text color for the search area */
+    padding: 20px;
+}
+
+/* search input field */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
+/* list of tracks */
+.track-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* track item */
+.track-item {
+    margin-bottom: 15px;
+}
+
+/* song titles */
+.track-item h2 {
+    color: white; /* White color for song titles */
+    margin: 0;
+}
+
+/* artist */
+.track-item h3 {
+    color: purple; /* Purple color for artist names */
+    margin: 0;
+}
+
+/* audio controls */
+audio {
+    margin-top: 10px;
+    display: block;
+}

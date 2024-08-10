@@ -5,10 +5,12 @@ const About = () => {
     <div>
       <div className='header'>Welcome to the SMJ Party!</div>
       <p>
-        Our Story       
-          SMJ Player started as a simple class project. We were just a group of students wanting to create a playlist for our class, but our passion for music and technology quickly transformed our humble project into a full-blown audio player that competes with any music app you can think of.
-      <br/>
+        Our Story
+      <br/><br/>        
+          SMJ Player started as a simple class project. We were just a group of students wanting to create a playlist for our class, but our passion for music and technology quickly transformed our humble project into a full-blown audio player.
+      <br/><br/> 
         The SMJ Experience
+      <br/><br/>
         SMJ Player offers a unique audio player experience designed to cater to all your music needs. 
         Here's what makes SMJ Player stand out:
        
