@@ -117,7 +117,7 @@ const tracks = [
 
   return (
     <div className="audio-search">
-        <h1>Search for a song</h1>
+      <div className="header_welcome">Search for a song</div><br />
       <input
         type="text"
         placeholder="Search for a song or artist..."
@@ -128,13 +128,12 @@ const tracks = [
       <ul className="track-list">
         {filteredTracks.map((track, index) => (
           <li key={index} className="track-item">
-            <h2>{track.title}</h2>
-            <h3>{track.artist}</h3>
-            <img src={track.album_cover} alt={track.album_title} />
-            <audio controls>
+            <h3>{track.title} by {track.artist}</h3>
+            <img src={track.album_cover} alt={track.album_title} className="search-album-art" />
+            {/* <audio controls>
               <source src={track.src} type="audio/mpeg" />
               Your browser does not support the audio element.
-            </audio>
+            </audio> */}
           </li>
         ))}
       </ul>
