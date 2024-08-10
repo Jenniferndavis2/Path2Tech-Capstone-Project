@@ -1,0 +1,16 @@
+/* Apply a black background to the entire page */
+body {
+    background-color: black;
+    color: white; /* White text for body */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Style the titles */
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(71, 9, 71); /* Purple color for titles */
+}
+
+/* Style paragraphs specifically if needed */
+p {
+    color: white; /* Ensure paragraphs are white */
+}
