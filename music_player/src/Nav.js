@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiHome, FiSearch, FiStar, FiUser } from "react-icons/fi";
+import { FiHome, FiSearch, FiStar, FiUser, FiUserPlus } from "react-icons/fi";
 
 const Nav = () => {
     return (
@@ -13,6 +13,7 @@ const Nav = () => {
         </div>
         <br />
         <div className="top_nav">
+            <FiUserPlus /><NavLink to="/Signup" className="navLinker link">Sign up</NavLink><br /><br />
             <FiUser /><NavLink to="/Login" className="navLinker link">Login</NavLink>
         </div>
         </>

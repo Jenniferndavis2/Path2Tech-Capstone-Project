@@ -130,6 +130,7 @@ const tracks = [
           <li key={index} className="track-item">
             <h2>{track.title}</h2>
             <h3>{track.artist}</h3>
+            <img src={track.album_cover} alt={track.album_title} />
             <audio controls>
               <source src={track.src} type="audio/mpeg" />
               Your browser does not support the audio element.

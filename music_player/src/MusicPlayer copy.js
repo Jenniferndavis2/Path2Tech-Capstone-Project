@@ -3,36 +3,34 @@ import AudioPlayer from 'react-h5-audio-player';
 import './reactstyles2.css';
 import song01 from './components/song01.mp3';
 import song02 from './components/song02.mp3';
-import song03 from './components/song03.mp3';
-import song04 from './components/song04.mp3';
-import song05 from './components/song05.mp3';
-import song06 from './components/song06.mp3';
-import song07 from './components/song07.mp3';
-import song08 from './components/song08.mp3';
-import song09 from './components/song09.mp3';
-import song10 from './components/song10.mp3';
 import album01 from './components/album01.jpg';
 import album02 from './components/album02.jpg';
-import album03 from './components/album03.jpg';
-import album04 from './components/album04.jpg';
-import album05 from './components/album05.jpg';
-import album06 from './components/album06.jpg';
-import album07 from './components/album07.jpg';
-import album08 from './components/album08.jpg';
-import album09 from './components/album09.jpg';
-import album10 from './components/album10.jpg';
 
-
-
-// import { FiPlay, FiPause, FiSkipBack, FiSkipForward } from "react-icons/fi";
-
-const MusicPlayer = ({tracks,currentTrackIndex,setCurrentTrackIndex}) => {
-   
+const MusicPlayer = () => {
+    const [setIsPlaying] = useState(false);
+    const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
     
+    const tracks = [
+        {
+            title: 'Song 1 Title',
+            src: song01,
+            artist: 'Artist 1',
+            album_cover: album01,
+            album_title: 'Album 1 Title',
+            duration: '2:13',
+        },
+        {
+            title: 'Song 2 Title',
+            src: song02,
+            artist: 'Artist 2',
+            album_cover: album02,
+            album_title: 'Album 2 Title',
+            duration: '2:11',
+        }
+    ];
+
     
-let currentTrack = tracks[currentTrackIndex];
-    
-  const playTrack = (index) => {
+    const playTrack = (index) => {
     setCurrentTrackIndex(index);
     };
 
@@ -47,14 +45,9 @@ let currentTrack = tracks[currentTrackIndex];
   };
 
   return (
-    <div className='mp_static'>
-      <div className="player_details">
-
-          <img src={currentTrack.album_cover} alt={currentTrack.album_title} className="album_covermp" />
-          <div className="mp_details">{currentTrack.title}<br /><strong>{currentTrack.artist}</strong></div>
-          </div>
-
-      <div className='player_only'>
+    <div>
+      <div className="playertext">
+        <h3>{tracks[currentTrackIndex].title} by {tracks[currentTrackIndex].artist}</h3>
         <AudioPlayer
         autoPlay={false}
         showSkipControls={true}
@@ -62,12 +55,11 @@ let currentTrack = tracks[currentTrackIndex];
         onClickPrevious={playPrevious}
         onClickNext={playNext}
         src={tracks[currentTrackIndex].src}
-        // onPlay={() => setIsPlaying(true)}
-        // onPause={() => setIsPlaying(false)}
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
       />
       </div>
-
-      {/* <p>
+      <p>
         <ol>
           {tracks.map((track, index) => (
             <li key={index} onClick={() => playTrack(index)} className='playlist_track'>
@@ -82,7 +74,7 @@ let currentTrack = tracks[currentTrackIndex];
             </li>
           ))}
         </ol>
-    </p> */}
+    </p>
     </div>
   );
 };
