@@ -1,0 +1,8 @@
+[build]
+  publish = "music_player/build"
+  command = "cd music_player && npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
