@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Login = () => {
   return (
-    <div class="container-login">
+    <div className="container-login">
         <h2>Login</h2>
         <form>
             <input type="email" name="email" placeholder="Email" required/>

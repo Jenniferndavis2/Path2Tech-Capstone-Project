@@ -1,5 +1,4 @@
 import React from 'react';
-import MusicPlayercopy from './MusicPlayercopy';
 import './App.css';
 
 const Main = ({tracks,setCurrentTrackIndex}) => {
@@ -16,7 +15,7 @@ const Main = ({tracks,setCurrentTrackIndex}) => {
           </li>
         ))}
       </ul> */}
-      <p>
+      <div>
         <ol>
           {tracks.map((track, index) => (
             <li onClick={()=>setCurrentTrackIndex(index)} key={index} className='playlist_track'>
@@ -31,7 +30,7 @@ const Main = ({tracks,setCurrentTrackIndex}) => {
             </li>
           ))}
         </ol>
-    </p>
+    </div>
     </>
   );
 }

@@ -1,26 +1,6 @@
-import React, { useState } from 'react';
 import AudioPlayer from 'react-h5-audio-player';
 import './reactstyles2.css';
-import song01 from './components/song01.mp3';
-import song02 from './components/song02.mp3';
-import song03 from './components/song03.mp3';
-import song04 from './components/song04.mp3';
-import song05 from './components/song05.mp3';
-import song06 from './components/song06.mp3';
-import song07 from './components/song07.mp3';
-import song08 from './components/song08.mp3';
-import song09 from './components/song09.mp3';
-import song10 from './components/song10.mp3';
-import album01 from './components/album01.jpg';
-import album02 from './components/album02.jpg';
-import album03 from './components/album03.jpg';
-import album04 from './components/album04.jpg';
-import album05 from './components/album05.jpg';
-import album06 from './components/album06.jpg';
-import album07 from './components/album07.jpg';
-import album08 from './components/album08.jpg';
-import album09 from './components/album09.jpg';
-import album10 from './components/album10.jpg';
+
 
 
 
@@ -32,9 +12,9 @@ const MusicPlayer = ({tracks,currentTrackIndex,setCurrentTrackIndex}) => {
     
 let currentTrack = tracks[currentTrackIndex];
     
-  const playTrack = (index) => {
-    setCurrentTrackIndex(index);
-    };
+  // const playTrack = (index) => {
+  //   setCurrentTrackIndex(index);
+  //   };
 
   const playPrevious = () => {
     const newIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
