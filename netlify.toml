@@ -1,5 +1,5 @@
 [build]
-  publish = "music_player/build/"
+  publish = "build/"
   command = "cd music_player && npm install && npm run build"
 
 [[redirects]]
