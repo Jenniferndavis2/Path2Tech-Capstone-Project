@@ -1,9 +1,9 @@
 [build]
-  publish = "build/"
-  command = "cd music_player && npm install && npm run build"
+  base="music_player/"
+  publish="build/"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = true
+  
